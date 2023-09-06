@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Master</title>
+  <style>
+    .container {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .image {
+      width: 100%;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .flex-display {
+      display: flex;
+      gap: 20px;
+    }
+
+    .child {
+      flex: 1;
+    }
+
+    .box {
+      border: 1px solid tomato;
+    }
+
+    @media screen and (max-width:720px) {
+      .flex-display {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="text-center">MONEY MASTER</h2>
+  <section class="flex-display">
+    <div class="child"> <img class="image" src="banner.avif" alt=""> </div>
+    <div class="child box text-center">
+      <h3>INCOME</h3>
+      <p>
+        Income:
+        <input type="text" name="" id="income">
+      </p>
+      <h3>EXPENSES</h3>
+      <p>
+        Food:
+        <input type="text" name="" id="food">
+      </p>
+      <p>
+        Rent:
+        <input type="text" name="" id="rent">
+      </p>
+      <p>
+        Clothes:
+        <input type="text" name="" id="clothes">
+      </p>
+      <button id="calculate">CALCULATE</button>
+      <h3>Total Expenses: <span id="total-expenses"></span></h3>
+      <h3>Balance: <span id="balance"></span></h3>
+      <p>
+        Save:
+        <input type="number" name="" id="save-num">
+        %
+        <button id="save-btn">Save</button>
+      </p>
+      <h3>Saving Amount: <span id="saving-amount"></span></h3>
+      <h3>Remaining balance: <span id="remaining-balance"></span></h3>
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+  <footer class="text-center">
+    <p><small>HASSAN @devAlienBrain</small></p>
+  </footer>
+</body>
+
+</html>
